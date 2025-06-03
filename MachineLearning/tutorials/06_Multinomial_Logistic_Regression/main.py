@@ -22,14 +22,16 @@ from data import (
     visualize_data_2d,
     visualize_decision_boundaries,
     visualize_feature_importance,
-    create_polynomial_features
+    create_polynomial_features,
+    load_data
 )
 
 from model import (
     MultinomialLogisticRegressionFromScratch,
     MultinomialLogisticRegressionSklearn,
     evaluate_classification_model,
-    plot_decision_regions
+    plot_decision_regions,
+    MultinomialLogisticRegression
 )
 
 
@@ -416,4 +418,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    X_train, y_train, X_test, y_test = load_data()
+    model = MultinomialLogisticRegression()
+    model.fit(X_train, y_train)
+    acc = model.evaluate(X_test, y_test)
+    print(f"Test Accuracy: {acc:.2f}")

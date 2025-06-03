@@ -12,6 +12,28 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import GridSearchCV, cross_val_score
 
 
+class RidgeRegression:
+    def __init__(self, alpha=1.0):
+        self.model = Ridge(alpha=alpha)
+    def fit(self, X, y):
+        self.model.fit(X, y)
+    def predict(self, X):
+        return self.model.predict(X)
+    def evaluate(self, X, y):
+        return self.model.score(X, y)
+
+
+class LassoRegression:
+    def __init__(self, alpha=0.1):
+        self.model = Lasso(alpha=alpha)
+    def fit(self, X, y):
+        self.model.fit(X, y)
+    def predict(self, X):
+        return self.model.predict(X)
+    def evaluate(self, X, y):
+        return self.model.score(X, y)
+
+
 class RidgeRegressionFromScratch:
     """
     Ridge Regression (L2 regularization) implementation from scratch.
