@@ -33,8 +33,8 @@ By completing this tutorial, you will:
 
 1. **Softmax Function**:
    - Generalizes logistic function to multiple dimensions
-   - Maps a vector of K real numbers to a probability distribution of K classes
-   - P(y=k|x) = exp(β₀ᵏ + β₁ᵏx₁ + ... + βₙᵏxₙ) / ∑ₖ₌₁ᴷ exp(β₀ᵏ + β₁ᵏx₁ + ... + βₙᵏxₙ)
+   - Maps a vector of $K$ real numbers to a probability distribution of $K$ classes
+   - $$P(y=k|x) = \frac{\exp(\beta_0^k + \beta_1^k x_1 + \ldots + \beta_n^k x_n)}{\sum_{k=1}^K \exp(\beta_0^k + \beta_1^k x_1 + \ldots + \beta_n^k x_n)}$$
 
 2. **Model Representation**:
    - Each class has its own set of model parameters
@@ -42,9 +42,9 @@ By completing this tutorial, you will:
    - One class is often chosen as reference to avoid redundancy
 
 3. **Cross-Entropy Loss**:
-   - J(θ) = -1/m ∑ᵢ₌₁ᵐ ∑ₖ₌₁ᴷ y_ik * log(p_ik)
-   - Where y_ik = 1 if sample i belongs to class k, else 0
-   - p_ik is the predicted probability of sample i belonging to class k
+   - $$J(\theta) = -\frac{1}{m} \sum_{i=1}^m \sum_{k=1}^K y_{ik} \log(p_{ik})$$
+   - Where $y_{ik} = 1$ if sample $i$ belongs to class $k$, else $0$
+   - $p_{ik}$ is the predicted probability of sample $i$ belonging to class $k$
 
 4. **Implementation Approaches**:
    - One-vs-Rest (OvR): Train K binary classifiers

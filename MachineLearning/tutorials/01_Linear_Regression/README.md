@@ -31,11 +31,11 @@ By completing this tutorial, you will:
 ## Key Concepts
 
 1. **Simple Linear Regression Formula**:
-   - Y = β₀ + β₁X + ε
-   - Where β₀ is the intercept and β₁ is the slope
+   - $Y = \beta_0 + \beta_1 X + \varepsilon$
+   - Where $\beta_0$ is the intercept and $\beta_1$ is the slope
 
 2. **Cost Function**:
-   - Mean Squared Error (MSE): (1/n) * Σ(y_pred - y_actual)²
+   - Mean Squared Error (MSE): $\text{MSE} = \frac{1}{n} \sum (\hat{y} - y)^2$
    - Minimized to find optimal parameters
 
 3. **Parameter Estimation**:

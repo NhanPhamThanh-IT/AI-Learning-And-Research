@@ -31,7 +31,7 @@ By completing this tutorial, you will:
 ## Key Concepts
 
 1. **Multiple Regression Formula**:
-   Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ + ε
+   $$Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \varepsilon$$
 
 2. **Assumptions**:
    - Linearity of the relationship between dependent and independent variables

@@ -15,9 +15,9 @@ K-Means aims to group data points such that points in the same cluster are more 
 
 ### Objective Function
 K-Means minimizes the within-cluster sum of squares (WCSS):
-\[
+$$
 J = \sum_{i=1}^K \sum_{x \in C_i} \|x - \mu_i\|^2
-\]
+$$
 where \(C_i\) is the set of points in cluster i and \(\mu_i\) is the centroid of cluster i.
 
 ## Example

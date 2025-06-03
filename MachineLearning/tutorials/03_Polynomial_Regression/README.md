@@ -31,7 +31,7 @@ By completing this tutorial, you will:
 ## Key Concepts
 
 1. **Polynomial Regression Formula**:
-   Y = β₀ + β₁X + β₂X² + ... + βₙXⁿ + ε
+   $$Y = \beta_0 + \beta_1 X + \beta_2 X^2 + \ldots + \beta_n X^n + \varepsilon$$
 
 2. **Feature Transformation**:
    - Creating polynomial features from original features

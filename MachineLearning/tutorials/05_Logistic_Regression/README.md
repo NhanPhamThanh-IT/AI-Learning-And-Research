@@ -31,20 +31,20 @@ By completing this tutorial, you will:
 ## Key Concepts
 
 1. **Logistic Function (Sigmoid)**:
-   - σ(z) = 1 / (1 + e^(-z))
+   - $\sigma(z) = \frac{1}{1 + e^{-z}}$
    - Maps any real value to a value between 0 and 1
 
 2. **Model Representation**:
-   - z = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ
-   - P(y=1) = σ(z)
+   - $z = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n$
+   - $P(y=1) = \sigma(z)$
 
 3. **Decision Boundary**:
-   - Linear: β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ = 0
+   - Linear: $\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n = 0$
    - Can be non-linear through feature transformation
 
 4. **Maximum Likelihood Estimation**:
    - Logistic regression uses the principle of maximum likelihood
-   - Cost function: J(θ) = -1/m * Σ [y * log(h(x)) + (1-y) * log(1-h(x))]
+   - Cost function: $J(\theta) = -\frac{1}{m} \sum \left[y \log(h(x)) + (1-y) \log(1-h(x))\right]$
 
 5. **Evaluation Metrics**:
    - Accuracy, Precision, Recall, F1-Score

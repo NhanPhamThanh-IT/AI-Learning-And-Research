@@ -16,9 +16,9 @@ PCA projects the data onto a lower-dimensional space by finding the directions (
 
 ### Mathematical Formulation
 Given a data matrix \(X\), PCA solves:
-\[
+$$
 \text{maximize}_w \quad \text{Var}(Xw) \quad \text{subject to} \quad \|w\|=1
-\]
+$$
 
 ## Example
 Suppose we have a dataset with 3 features. PCA can reduce it to 2 principal components that capture most of the variance, allowing for visualization and noise reduction.

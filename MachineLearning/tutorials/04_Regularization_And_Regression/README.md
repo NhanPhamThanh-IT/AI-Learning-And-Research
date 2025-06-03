@@ -36,17 +36,17 @@ By completing this tutorial, you will:
 
 2. **Ridge Regression (L2 Regularization)**:
    - Add the sum of squared coefficients as a penalty
-   - Loss function: MSE + λ∑(βⱼ²)
+   - Loss function: $\text{MSE} + \lambda \sum (\beta_j^2)$
    - Shrinks coefficients toward zero but rarely to exactly zero
 
 3. **Lasso Regression (L1 Regularization)**:
    - Add the sum of absolute coefficients as a penalty
-   - Loss function: MSE + λ∑|βⱼ|
+   - Loss function: $\text{MSE} + \lambda \sum |\beta_j|$
    - Can reduce coefficients to exactly zero, performing feature selection
 
 4. **Elastic Net**:
    - Combines L1 and L2 penalties
-   - Loss function: MSE + λ₁∑|βⱼ| + λ₂∑(βⱼ²)
+   - Loss function: $\text{MSE} + \lambda_1 \sum |\beta_j| + \lambda_2 \sum (\beta_j^2)$
    - Handles correlated features better than Lasso
 
 5. **Hyperparameter Selection**:
