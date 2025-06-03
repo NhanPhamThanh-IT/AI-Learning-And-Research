@@ -430,6 +430,12 @@ def visualize_digits_dataset():
     return X, y
 
 
+def load_data():
+    X, y = make_classification(n_samples=200, n_features=8, n_classes=3, n_informative=6, n_clusters_per_class=1, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    return X_train, y_train, X_test, y_test
+
+
 if __name__ == "__main__":
     # Example usage
     print("Generating synthetic data for multi-class classification:")

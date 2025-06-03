@@ -20,7 +20,8 @@ from data import (
     load_custom_data,
     preprocess_data,
     visualize_data_2d,
-    visualize_decision_boundary
+    visualize_decision_boundary,
+    load_data
 )
 
 from model import (
@@ -28,7 +29,8 @@ from model import (
     LogisticRegressionSklearn,
     evaluate_classification_model,
     plot_roc_curve,
-    plot_decision_regions
+    plot_decision_regions,
+    LogisticRegression
 )
 
 

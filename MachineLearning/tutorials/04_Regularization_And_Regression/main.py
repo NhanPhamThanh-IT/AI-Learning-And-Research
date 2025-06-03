@@ -19,7 +19,8 @@ from data import (
     load_real_data,
     preprocess_data,
     visualize_data,
-    generate_multicollinear_data
+    generate_multicollinear_data,
+    load_data
 )
 
 from model import (
@@ -31,7 +32,9 @@ from model import (
     ElasticNetRegressionSklearn,
     evaluate_regression_model,
     plot_regularization_path,
-    plot_coefficient_comparison
+    plot_coefficient_comparison,
+    RidgeRegression,
+    LassoRegression
 )
 
 
